@@ -190,7 +190,14 @@ filtered_df = st.session_state.filtered_df
 # ============================================================
 
 st.markdown('<div class="main-title">📚 診断士 朝問アーカイブ</div>', unsafe_allow_html=True)
-st.markdown('<div class="sub-title">中小企業診断士 1次試験 過去問チャレンジ</div>', unsafe_allow_html=True)
+st.markdown('''
+<div class="sub-title">
+    中小企業診断士 1次試験 オリジナル問題集<br>
+    作成者：中小企業診断士 仲田俊一<br>
+    <a href="https://x.com/nakata4dan4" target="_blank">𝕏 @nakata4dan4</a>　
+    <a href="https://www.instagram.com/shindanshi.1day1neta" target="_blank">📷 Instagram</a>
+</div>
+''', unsafe_allow_html=True)
 
 if len(filtered_df) == 0:
     st.warning("該当する問題がありません。条件を変更してください。")

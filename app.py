@@ -199,19 +199,19 @@ filtered_df = st.session_state.filtered_df
 # メインUI
 # ============================================================
 
-st.markdown('<div class="main-title">📚 診断士 朝問アーカイブ</div>', unsafe_allow_html=True)
+st.markdown('<div class="main-title">📚 診断士の朝問アプリ　α版</div>', unsafe_allow_html=True)
 st.markdown('''
 <div class="sub-title">
     中小企業診断士 1次試験 オリジナル問題集<br>
-    作成者：中小企業診断士 仲田俊一<br>
-    <a href="https://x.com/nakata4dan4" target="_blank">𝕏 @nakata4dan4</a>　
+    作成者：中小企業診断士 仲田俊一　SNSのフォロー大歓迎<br>
+    <a href="https://x.com/nakata4dan4" target="_blank">𝕏 @nakata4dan4）</a>
     <a href="https://www.instagram.com/shindanshi.1day1neta" target="_blank">📷 Instagram</a>
 </div>
 ''', unsafe_allow_html=True)
 
-with st.expander("📖 このアプリについて", expanded=False):
+with st.expander("📖 このアプリについて（最初にお読みください）", expanded=False):
     st.markdown("""
-    ### 診断士の朝問アプリ　α版
+    ### 診断士の朝問アプリ　α版　とは？
 
     中小企業診断士講座の仲田のSNS（XとInstagram）で、週に2回出題している「診断士の朝問」のアプリです。まだ試作版ですので、完成までお楽しみに。
 

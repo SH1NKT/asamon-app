@@ -1,18 +1,4 @@
 import streamlit as st
-
-import streamlit.components.v1 as components
-
-# Google Analytics
-components.html("""
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2819CM9XM4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-2819CM9XM4');
-</script>
-""", height=0)
-
 import pandas as pd
 import random
 
@@ -23,7 +9,17 @@ st.set_page_config(
 )
 
 st.markdown("""
-<style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2819CM9XM4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2819CM9XM4');
+</script>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>›
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700;900&display=swap');
 
 html, body, [class*="css"] {

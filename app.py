@@ -1,4 +1,18 @@
 import streamlit as st
+
+import streamlit.components.v1 as components
+
+# Google Analytics
+components.html("""
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2819CM9XM4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2819CM9XM4');
+</script>
+""", height=0)
+
 import pandas as pd
 import random
 
